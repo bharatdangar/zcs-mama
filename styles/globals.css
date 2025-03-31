@@ -1,3 +1,18 @@
+:root body,
+.light body,
+[data-theme="light"] body {
+  --heroui-hover-opacity: 0.95;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dynamic-cursor {
+  position: absolute;
+  width: calc(20px + var(--size, 0px));
+  height: calc(20px + var(--size, 0px));
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+}
